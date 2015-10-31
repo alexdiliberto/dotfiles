@@ -1,0 +1,22 @@
+NPM Packages
+-----------------------
+
+bower
+caniuse-cm
+cloc
+ember-cli
+handlebars
+keybase
+keybase-installer
+local-web-server
+node-inspector
+npm
+npm-check
+npm-release
+phantomjs2
+purify-css
+speed-test
+testem
+trash-cli
+vorlon
+vtop
