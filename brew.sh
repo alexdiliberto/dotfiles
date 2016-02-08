@@ -117,6 +117,7 @@ brew install python
 brew install rbenv
 brew install ruby-build
 brew install rust
+brew install sl
 brew install webp
 brew install yuicompressor
 
