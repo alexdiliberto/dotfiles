@@ -53,8 +53,10 @@ alias gemcleanup='gem cleanup;'
 alias nu='npm install -g npm@latest; npm update -g;'
 alias npmlist='npm -g ls --depth=0'
 alias npmold='npm -g outdated --depth=0'
-alias nom='npm cache clear && rm -rf node_modules && npm install'
-alias nombom='npm cache clear && bower cache clean && rm -rf node_modules bower_components && npm install && bower install'
+# Make Alfred / Spotlight ignore node_modules and bower_components
+alias nom='npm cache clean && rm -rf node_modules && mkdir node_modules && touch node_modules/.metadata_never_index && npm install'
+alias bom='bower cache clean && rm -rf bower_components && mkdir bower_components && touch bower_components/.metadata_never_index && bower install'
+alias nombom='npm cache clean && bower cache clean && rm -rf node_modules bower_components & mkdir node_modules && touch node_modules/.metadata_never_index && mkdir bower_components && touch bower_components/.metadata_never_index && npm install && bower install'
 
 # Misc
 alias gzip="gzip -9n" # set strongest compression level as ‘default’ for gzip
