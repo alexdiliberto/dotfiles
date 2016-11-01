@@ -1,6 +1,15 @@
 Atom Packages
 -----------------------
 
-linter-jscs
-minimapx
+atom-handlebars
+highlight-selected
+minimap
+open-recent
 pigments
+
+
+Atom Themes
+-----------------------
+
+atom dark
+monokai
