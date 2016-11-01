@@ -2,7 +2,8 @@
 
 	name = Alex DiLiberto
 	email = alex@alexdiliberto.com
-	
+	signingkey = #secret-key-id (gpg --list-secret-keys)
+
 [alias]
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
