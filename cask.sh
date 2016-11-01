@@ -17,7 +17,6 @@ apps=(
   filezilla
   firefox
   firefoxdeveloperedition
-  firefox-nightly
   flux
   google-chrome
   google-chrome-canary
@@ -25,14 +24,13 @@ apps=(
   imagealpha
   imageoptim
   kaleidoscope
+  ksdiff
   laullon-gitx
   mamp
-  miro-video-converter
-  mou
+  ngrok
   ntfsmounter
   openemu
   opera
-  opera-developer
   opera-beta
   qlcolorcode
   qlmarkdown
@@ -43,11 +41,12 @@ apps=(
   skype
   slowy
   steam
-  sublime-text
+  sublime-text2
   the-unarchiver
   torbrowser
   transmission
   virtualbox
+  visual-studio-code
   vlc
 )
 

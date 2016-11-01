@@ -101,22 +101,9 @@ brew install vbindiff
 brew install webkit2png
 brew install zopfli
 
-# Install Node.js. Note: this installs `npm` too, using the recommended
-# installation method.
-brew install node
-
-# Install io.js
-brew install iojs
-
 # Install Alex's other binaries
 brew install cowsay
-brew install casperjs
-brew install git-flow
-brew install ngrok
 brew install phantomjs
-brew install python
-brew install rbenv
-brew install ruby-build
 brew install rust
 brew install sl
 brew install webp
