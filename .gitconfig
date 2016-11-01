@@ -2,7 +2,7 @@
 
 	name = Alex DiLiberto
 	email = alex@alexdiliberto.com
-
+	
 [alias]
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
@@ -218,7 +218,9 @@
 	tool = Kaleidoscope
 
 [push]
+
 	default = matching
 
 [grep]
+
 	lineNumber = true
