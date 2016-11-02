@@ -245,6 +245,16 @@ function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
 
+# curl http://wttr.in/
+# `wttr` with no arguments opens the wttr.in output for "Charlotte, NC, USA"
+function wttr() {
+  if [ $# -eq 0 ]; then
+		curl "http://wttr.in/charlotte";
+	else
+		curl "http://wttr.in/${1}";
+	fi;
+}
+
 # Support NPM bash completion
 if npm -v >/dev/null 2>&1; then
   ###-begin-npm-completion-###
