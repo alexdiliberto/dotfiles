@@ -102,6 +102,7 @@ brew install webkit2png
 brew install zopfli
 
 # Install Alex's other binaries
+brew install nvm
 brew install cowsay
 brew install phantomjs
 brew install rust
