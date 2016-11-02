@@ -12,7 +12,6 @@ apps=(
   caffeine
   charles
   colloquy
-  divvy
   dropbox
   filezilla
   firefox
@@ -40,6 +39,7 @@ apps=(
   recordit
   skype
   slowy
+  spectacle
   steam
   sublime-text2
   the-unarchiver
