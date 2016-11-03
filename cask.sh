@@ -74,6 +74,9 @@ main() {
   echo "installing cask..."
   brew install caskroom/cask/brew-cask
 
+  # Cask tab completion
+  brew install homebrew/completions/brew-cask-completion
+
   # Tap alternative versions
   brew tap caskroom/versions
 
