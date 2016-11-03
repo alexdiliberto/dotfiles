@@ -53,6 +53,7 @@ apps=(
 # Fonts
 fonts=(
   font-clear-sans
+  font-hack
   font-roboto
 )
 
