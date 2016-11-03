@@ -1,8 +1,10 @@
 Atom Packages
 -----------------------
 
+atom-beautify
 atom-handlebars
 highlight-selected
+language-diff
 minimap
 open-recent
 pigments
