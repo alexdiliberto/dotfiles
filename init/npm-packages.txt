@@ -2,7 +2,7 @@ NPM Packages
 -----------------------
 
 bower
-caniuse-cm
+caniuse-cmd
 cloc
 ember-cli
 handlebars
