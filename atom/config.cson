@@ -1,40 +1,22 @@
 "*":
-  editor:
-    fontFamily: "Menlo"
-    fontSize: 13
-    showIndentGuide: true
-    preferredLineLength: 120
-    softWrap: true
-    softWrapAtPreferredLineLength: true
-    invisibles: {}
-  welcome:
-    showOnStartup: false
-  "release-notes":
-    viewedVersion: "0.85.0"
-  "exception-reporting":
-    userId: "231d5350-5594-44a5-eaef-477a5dfb6c6f"
-  metrics:
-    userId: "97183d6a0ca1138e9442e0eb747b02abab41cb4f"
   core:
-    ignoredNames: [
-      ".bundle"
-      ".git"
-      "log"
-      "repositories"
-      "tmp"
-      "vendor"
-    ]
+    telemetryConsent: "no"
     themes: [
-      "seti-ui"
+      "atom-dark-ui"
       "monokai"
     ]
-    "hideGitIgnoredFiles": true
-  "spell-check":
-    grammars: [
-      "text.plain"
-      "source.gfm"
-      "text.git-commit"
-    ]
-  ".slim.text":
     whitespace:
       removeTrailingWhitespace: false
+  editor:
+    fontFamily: "Menlo"
+    fontSize: 14
+    invisibles: {}
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?s…"
+    preferredLineLength: 120
+    showIndentGuide: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+  "exception-reporting":
+    userId: "884440fb-9e84-fcf9-8239-ecee423c921e"
+  welcome:
+    showOnStartup: false
