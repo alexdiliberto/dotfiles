@@ -51,7 +51,7 @@ alias gu='gem update --system; gem update;'
 alias gemlist='gem list | egrep -v "^( |$)"'
 alias gemcleanup='gem cleanup;'
 
-# NPM Aliases
+# Yarn/NPM Aliases
 alias nu='npm install -g npm@latest; npm update -g;'
 alias npmlist='npm -g ls --depth=0'
 alias npmold='npm -g outdated --depth=0'
@@ -68,6 +68,7 @@ alias redo='sudo \!-1'
 alias rmlog="sudo rm /var/log/asl/*" #clear out old log files
 alias top='top -ocpu'
 alias vtop='vtop --theme wizard'
+alias rm=trash # https://github.com/sindresorhus/trash-cli#tip
 alias disableNotificationCenter="launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist && killall NotificationCenter"
 alias enableNotificationCenter="launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist && open /System/Library/CoreServices/NotificationCenter.app/"
 
