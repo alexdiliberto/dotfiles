@@ -5,6 +5,7 @@ bower
 caniuse-cmd
 cloc
 ember-cli
+empty-trash-cli
 handlebars
 keybase
 keybase-installer
@@ -13,9 +14,10 @@ node-inspector
 npm
 npm-check
 npm-release
-phantomjs2
+phantomjs-prebuilt
 purify-css
 speed-test
+surge
 testem
 trash-cli
 vorlon
