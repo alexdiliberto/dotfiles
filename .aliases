@@ -44,7 +44,7 @@ alias gfu='git fetch upstream -v'
 alias gco='git checkout'
 
 # HomeBrew Aliases
-alias bu='brew update; brew upgrade --all;'
+alias bu='brew update; brew upgrade;'
 
 # Gem Aliases
 alias gu='gem update --system; gem update;'
