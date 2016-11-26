@@ -37,8 +37,8 @@ brew install wget --with-iri
 # Install RingoJS and Narwhal.
 # Note that the order in which these are installed is important;
 # see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
+# brew install ringojs
+# brew install narwhal
 
 # Install more recent versions of some macOS tools.
 brew install vim --override-system-vi
@@ -102,12 +102,16 @@ brew install webkit2png
 brew install zopfli
 
 # Install Alex's other important binaries
-brew install watchman
-brew install nvm
+brew install couchdb
 brew install cowsay
+brew install nvm
+brew install rbenv
+brew install ruby-build
 brew install rust
 brew install sl
+brew install watchman
 brew install webp
+brew install yarn
 brew install yuicompressor
 
 # Remove outdated versions from the cellar.
