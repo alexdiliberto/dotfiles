@@ -20,6 +20,7 @@ apps=(
   google-chrome
   google-chrome-canary
   hex-fiend
+  hyper
   imagealpha
   imageoptim
   kaleidoscope
