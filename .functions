@@ -255,6 +255,14 @@ function wttr() {
 	fi;
 }
 
+# AnyBar
+# https://github.com/tonsky/AnyBar
+#  $ anybar red
+#  $ anybar green 1739
+function anybar() {
+  echo -n $1 | nc -4u -w0 localhost ${2:-1738};
+}
+
 # Support NPM bash completion
 if npm -v >/dev/null 2>&1; then
   ###-begin-npm-completion-###
