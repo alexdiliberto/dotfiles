@@ -7,6 +7,7 @@ set -e
 # Apps
 apps=(
   1password
+  anybar
   atom
   boxer
   caffeine
