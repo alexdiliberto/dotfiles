@@ -25,6 +25,7 @@ apps=(
   imagealpha
   imageoptim
   kaleidoscope
+  keybase
   ksdiff
   laullon-gitx
   mamp
