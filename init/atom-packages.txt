@@ -4,7 +4,9 @@ Atom Packages
 atom-beautify
 atom-handlebars
 highlight-selected
+language-apache
 language-diff
+linter-ember-template
 minimap
 open-recent
 pigments
