@@ -1,3 +1,5 @@
+`apm stars --install`
+
 Atom Packages
 -----------------------
 
@@ -15,5 +17,5 @@ pigments
 Atom Themes
 -----------------------
 
-atom dark
+atom-dark-ui
 monokai
