@@ -9,6 +9,7 @@ highlight-selected
 language-apache
 language-diff
 linter-ember-template
+linter-eslint
 minimap
 open-recent
 pigments
