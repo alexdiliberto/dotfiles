@@ -45,6 +45,7 @@ apps=(
   spectacle
   steam
   sublime-text2
+  teamspeak-client
   the-unarchiver
   torbrowser
   transmission
