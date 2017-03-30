@@ -13,6 +13,7 @@ apps=(
   caffeine
   charles
   colloquy
+  dash
   dropbox
   filezilla
   firefox
