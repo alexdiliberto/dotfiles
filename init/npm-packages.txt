@@ -1,24 +1,17 @@
 NPM Packages
 -----------------------
+yarn global add bower cloc ember-cli empty-trash-cli local-web-server npm-release phantomjs-prebuilt qunitjs speed-test surge trash-cli vorlon vtop
 
 bower
-caniuse-cmd
 cloc
 ember-cli
 empty-trash-cli
-handlebars
-keybase
-keybase-installer
 local-web-server
-node-inspector
-npm
-npm-check
 npm-release
 phantomjs-prebuilt
-purify-css
+qunitjs
 speed-test
 surge
-testem
 trash-cli
 vorlon
 vtop
