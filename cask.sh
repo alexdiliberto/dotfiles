@@ -14,6 +14,7 @@ apps=(
   charles
   colloquy
   dash
+  discord
   dropbox
   filezilla
   firefox
