@@ -7,6 +7,7 @@ set -e
 # Apps
 apps=(
   1password
+  adobe-cs6-design-web-premium
   anybar
   atom
   boxer
