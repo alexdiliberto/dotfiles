@@ -3,7 +3,6 @@ PATH=/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/u
 if [ -d "/opt/subversion" ]; then
   PATH=/opt/subversion/bin:$PATH
 fi
-PATH="$PATH:`yarn global bin`"
 
 # Update PATH. Add coreutils.
 PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
@@ -11,12 +10,13 @@ PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 # Update PATH. Use rbenv to dynamically select which Ruby to use.
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-# Export ENV variables
-export PATH
-
-# Load NVM (installed via homebrew)
+# Load NVM
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Export PATH (After "Load NVM" step)
+export PATH
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
