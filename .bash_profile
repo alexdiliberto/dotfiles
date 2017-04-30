@@ -3,7 +3,7 @@ PATH=/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/u
 if [ -d "/opt/subversion" ]; then
   PATH=/opt/subversion/bin:$PATH
 fi
-PATH=$PATH:$HOME/.yarn/bin
+PATH="$PATH:`yarn global bin`"
 
 # Update PATH. Add coreutils.
 PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
