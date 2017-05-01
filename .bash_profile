@@ -18,6 +18,10 @@ export NVM_DIR="$HOME/.nvm"
 # Export PATH (After "Load NVM" step)
 export PATH
 
+# Increase ulimit to prevent error `Too many open files in system (ENFILE)``
+#   http://blog.mact.me/2014/10/22/yosemite-upgrade-changes-open-file-limit`
+ulimit -n 2560
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
