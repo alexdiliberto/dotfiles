@@ -5,14 +5,28 @@ Atom Packages
 
 atom-beautify
 atom-handlebars
+atom-reveal-file-in-finder
+case-keep-replace
+change-case
+copy-path
+docblockr
+duplicate-line-or-selection
+editorconfig
+file-icons
 highlight-selected
 language-apache
 language-diff
 linter-ember-template
 linter-eslint
+local-history
 minimap
 open-recent
 pigments
+prettier-atom
+project-manager
+sort-lines
+sublime-style-column-selection
+toggle-quotes
 
 
 Atom Themes
