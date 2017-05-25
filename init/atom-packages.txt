@@ -23,7 +23,6 @@ minimap
 open-recent
 pigments
 prettier-atom
-project-manager
 sort-lines
 sublime-style-column-selection
 toggle-quotes
