@@ -6,6 +6,15 @@
 
 [alias]
 
+	# `git checkout` shorthand
+	co = checkout
+
+	# List of the branches in most recently used order
+	list-branches = "branch --sort=committerdate"
+
+	# Delete branched that have already been merged to master and prune origin
+	delete-merged-branches = "!git branch --merged master | grep -v -e 'master' -e '\\*' | xargs -n 1 git branch -d && git remote prune origin"
+
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
 

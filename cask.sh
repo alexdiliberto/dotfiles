@@ -33,6 +33,7 @@ apps=(
   laullon-gitx
   mamp
   ngrok
+  nordvpn
   ntfsmounter
   openemu
   opera

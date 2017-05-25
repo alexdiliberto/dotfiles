@@ -1,0 +1,8 @@
+Install: Ctrl+P -> ext install <name>
+
+Visual Studio Code Packages
+-----------------------
+
+diff
+vscode-ember
+vsc-ember-cli
