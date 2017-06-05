@@ -6,6 +6,7 @@ Atom Packages
 atom-beautify
 atom-handlebars
 atom-reveal-file-in-finder
+atom-typescript
 case-keep-replace
 change-case
 copy-path
