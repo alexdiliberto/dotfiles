@@ -102,6 +102,7 @@ brew install webkit2png
 brew install zopfli
 
 # Install Alex's other important binaries
+brew install asciinema
 brew install couchdb
 brew install cowsay
 brew install nvm
