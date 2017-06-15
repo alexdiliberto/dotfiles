@@ -11,7 +11,6 @@ apps=(
   anybar
   atom
   boxer
-  caffeine
   charles
   colloquy
   dash
@@ -45,7 +44,6 @@ apps=(
   quicklook-json
   recordit
   skype
-  slowy
   spectacle
   steam
   sublime-text2
