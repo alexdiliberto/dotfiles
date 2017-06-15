@@ -103,10 +103,13 @@
 	whitespace = fix
 
 [credential]
+
 	helper = osxkeychain
 
 [core]
+
 	editor = subl -w
+
 	# Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
