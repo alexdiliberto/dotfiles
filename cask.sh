@@ -36,7 +36,6 @@ apps=(
   ntfsmounter
   openemu
   opera
-  opera-beta
   qlcolorcode
   qlmarkdown
   qlprettypatch
