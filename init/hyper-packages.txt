@@ -1,0 +1,8 @@
+Hyper.app Packages
+-----------------------
+hpm install hyperline hypercwd hyperterm-1password hyperterm-paste
+
+hyperline
+hypercwd
+hyperterm-1password
+hyperterm-paste

@@ -6,6 +6,7 @@ bower
 cloc
 ember-cli
 empty-trash-cli
+hpm-cli
 local-web-server
 npm-release
 phantomjs-prebuilt
