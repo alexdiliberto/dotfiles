@@ -106,6 +106,7 @@ brew install asciinema
 brew install couchdb
 brew install cowsay
 brew install heroku
+brew install mongodb
 brew install nvm
 brew install rbenv
 brew install ruby-build
