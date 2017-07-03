@@ -17,6 +17,7 @@ file-icons
 highlight-selected
 language-apache
 language-diff
+language-docker
 linter-ember-template
 linter-eslint
 local-history
