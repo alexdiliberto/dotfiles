@@ -15,6 +15,7 @@ apps=(
   colloquy
   dash
   discord
+  docker
   dropbox
   filezilla
   firefox
