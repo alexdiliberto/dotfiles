@@ -102,7 +102,9 @@ brew install webkit2png
 brew install zopfli
 
 # Install Alex's other important binaries
+brew tap codeclimate/formulae
 brew install asciinema
+brew install codeclimate
 brew install couchdb
 brew install cowsay
 brew install heroku
