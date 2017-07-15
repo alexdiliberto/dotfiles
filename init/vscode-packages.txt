@@ -3,6 +3,12 @@ Install: Ctrl+P -> ext install <name>
 Visual Studio Code Packages
 -----------------------
 
+change-case
+code-settings-sync
 diff
-vscode-ember
+ember-related-files
+emberes6snippets
+tslint
 vsc-ember-cli
+vscode-ember
+vscode-eslint
