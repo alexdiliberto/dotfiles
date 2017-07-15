@@ -1,4 +1,20 @@
 "*":
+  "atom-beautify":
+    css:
+      beautify_on_save: true
+    handlebars:
+      beautify_on_save: true
+      default_beautifier: "Pretty Diff"
+    html:
+      beautify_on_save: true
+    js:
+      beautify_on_save: true
+    json:
+      beautify_on_save: true
+    sass:
+      beautify_on_save: true
+    scss:
+      beautify_on_save: true
   core:
     telemetryConsent: "no"
     themes: [
@@ -11,12 +27,16 @@
     fontFamily: "Menlo"
     fontSize: 14
     invisibles: {}
-    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?s…"
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?…"
     preferredLineLength: 120
     showIndentGuide: true
     softWrap: true
     softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "884440fb-9e84-fcf9-8239-ecee423c921e"
+  "linter-eslint":
+    fixOnSave: true
+  "linter-ui-default":
+    panelHeight: 81
   welcome:
     showOnStartup: false
