@@ -106,6 +106,7 @@ brew install rbenv
 brew install ruby-build
 brew install rust
 brew install sl
+brew install the_silver_searcher
 brew install watchman
 brew install webp
 brew install yarn
