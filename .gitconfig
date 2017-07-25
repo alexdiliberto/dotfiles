@@ -31,9 +31,29 @@
 	# Usage: git undo
 	undo = reset --soft HEAD~1
 
+  # Add staged changes to a specified commit (may introduce conflicts during rebase)
+  # ** Rewrites history **
+  # Usage: git fixup <commit-hash>
+  fixup = "!sh -c \"git commit --fixup $1 --no-verify && git rebase $1^ --interactive --autosquash --autostash\" -"
+
+  # Edit the message for a specified commit (may introduce conflicts during rebase)
+  # Note: functionally similar to performing an interactive rebase and using `reword` option
+  # ** Rewrites history **
+  # Usage: git reword <commit-hash>
+  reword = "!sh -c \"git checkout $1 && git commit --amend && git rebase HEAD $(git branch-name) --autostash\" -"
+
+  # Perform an interactive rebase starting from specified commit (may introduce conflicts during rebase)
+  # ** Rewrites history **
+  # Usage: git edit <commit-hash>
+  edit = "!sh -c \"git rebase $1^ --interactive --autostash\" -"
+
 	# Push the current branch to the remote "origin", and set it to track the upstream branch
 	# Usage: git publish
 	publish = "!git push -u origin $(git branch-name)"
+
+  # "Safer" force push -- see http://weiqingtoh.github.io/force-with-lease/
+  # Usage: git pushf
+  pushf = push --force-with-lease
 
 	# Delete merged branches
 	# Usage: git cleanup
@@ -51,6 +71,9 @@
 
 	# List of the branches in most recently used order
 	list-branches = "branch --sort=committerdate"
+
+  # List all remote branches, ordered by last commit date
+  list-remote-branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
 
 	# Delete branched that have already been merged to master and prune origin
 	delete-merged-branches = "!git branch --merged master | grep -v -e 'master' -e '\\*' | xargs -n 1 git branch -d && git remote prune origin"
