@@ -99,6 +99,7 @@ brew install asciinema
 brew install codeclimate
 brew install couchdb
 brew install cowsay
+brew install elixir
 brew install heroku
 brew install mongodb
 brew install nvm
