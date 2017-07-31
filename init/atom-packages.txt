@@ -18,6 +18,7 @@ highlight-selected
 language-apache
 language-diff
 language-docker
+language-elixir
 linter-ember-template
 linter-eslint
 local-history
