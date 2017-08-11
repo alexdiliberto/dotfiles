@@ -12,17 +12,17 @@ alias -- -="cd -"
 alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
-alias g="git"
+alias r="cd ~/Repos"
 
-# Bundler Aliases
+# Bundler
 alias be='bundle exec '
 alias bi='echo Running: bundle install... ; bundle install ;'
 alias brb='echo Running: bundle exec rake build... ; bundle exec rake build ;'
 alias brc='echo Running: bundle exec rake clean... ; bundle exec rake clean ;'
 alias bg='echo Running: bundle exec guard... ; bundle exec guard ;'
 
-# Git Aliases
+# Git
+alias g='git'
 alias gb='git branch'
 alias gba='git branch -a'
 alias gbav='git branch -avv'
@@ -41,15 +41,16 @@ alias gf='git fetch origin -v'
 alias gfu='git fetch upstream -v'
 alias gco='git checkout'
 
-# HomeBrew Aliases
+# Homebrew
 alias bu='brew update; brew upgrade;'
 
-# Gem Aliases
+# Gem
 alias gu='gem update --system; gem update;'
 alias gemlist='gem list | egrep -v "^( |$)"'
 alias gemcleanup='gem cleanup;'
 
 # Yarn/NPM Aliases
+alias y='yarn'
 alias nu='npm install -g npm@latest; npm update -g;'
 alias npmlist='npm -g ls --depth=0'
 alias npmold='npm -g outdated --depth=0'
@@ -59,7 +60,7 @@ alias bom='bower cache clean && rm -rf bower_components && mkdir bower_component
 alias nombom='npm cache clean && bower cache clean && rm -rf node_modules bower_components & mkdir node_modules && touch node_modules/.metadata_never_index && mkdir bower_components && touch bower_components/.metadata_never_index && npm install && bower install'
 alias nodmodsize='find . -name "node_modules" -type d -prune -exec du -sh '{}' + | gsort -hr'
 
-# Ember Aliases
+# Ember
 alias e='ember'
 
 # Misc
