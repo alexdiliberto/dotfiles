@@ -100,9 +100,11 @@ brew install codeclimate
 brew install couchdb
 brew install cowsay
 brew install elixir
+brew install gpg-agent
 brew install heroku
 brew install mongodb
 brew install nvm
+brew install pinentry-mac
 brew install rbenv
 brew install ruby-build
 brew install rust
