@@ -34,5 +34,4 @@ toggle-quotes
 Atom Themes
 -----------------------
 
-atom-dark-ui
 monokai
