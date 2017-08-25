@@ -2,7 +2,7 @@
   /Users/alex/Library/Application Support/Sublime Text 2/Packages/User
 
   cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings 2> /dev/null
-  cp -r init/snippets ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/ 2> /dev/null
+  cp -r init/snippets/sublime ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/ 2> /dev/null
 */
 {
   "auto_complete_commit_on_tab": true,
