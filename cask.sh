@@ -31,6 +31,7 @@ apps=(
   keybase
   ksdiff
   laullon-gitx
+  libreoffice
   mamp
   ngrok
   nordvpn
