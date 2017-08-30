@@ -10,10 +10,10 @@ PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 # Update PATH. Use rbenv to dynamically select which Ruby to use.
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-# Load NVM (installed using `brew install nvm`)
+# Load NVM (https://github.com/creationix/nvm#install-script)
 export NVM_DIR="$HOME/.nvm"
-mkdir -p $NVM_DIR # Create `$HOME/.nvm` if it does not already exist
-. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm from the mac homebrew location
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Export PATH (After "Load NVM" step)
 export PATH
