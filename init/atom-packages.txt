@@ -16,6 +16,7 @@ editorconfig
 file-icons
 highlight-selected
 language-apache
+language-babel
 language-diff
 language-docker
 language-elixir
