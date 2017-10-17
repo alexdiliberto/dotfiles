@@ -9,6 +9,7 @@
       beautify_on_save: true
     js:
       beautify_on_save: true
+      brace_style: "collapse-preserve-inline"
     json:
       beautify_on_save: true
     sass:
@@ -16,6 +17,10 @@
     scss:
       beautify_on_save: true
   core:
+    customFileTypes:
+      "text.html.htmlbars": [
+        "language-ember-htmlbars"
+      ]
     telemetryConsent: "no"
     themes: [
       "atom-dark-ui"
@@ -25,7 +30,7 @@
       removeTrailingWhitespace: false
   editor:
     fontFamily: "Menlo"
-    fontSize: 14
+    fontSize: 15
     invisibles: {}
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?…"
     preferredLineLength: 120

@@ -19,6 +19,7 @@ language-apache
 language-diff
 language-docker
 language-elixir
+language-ember-htmlbars
 linter-ember-template
 linter-eslint
 local-history
