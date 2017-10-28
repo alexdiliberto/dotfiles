@@ -21,6 +21,7 @@ language-diff
 language-docker
 language-elixir
 language-ember-htmlbars
+language-rust
 linter-ember-template
 linter-eslint
 local-history
