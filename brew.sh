@@ -101,6 +101,7 @@ brew install codeclimate
 brew install couchdb
 brew install cowsay
 brew install elixir
+brew install go
 brew install gpg-agent
 brew install heroku
 brew install mongodb

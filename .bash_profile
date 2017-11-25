@@ -4,6 +4,10 @@ if [ -d "/opt/subversion" ]; then
   PATH=/opt/subversion/bin:$PATH
 fi
 
+# Go (https://golang.org)
+export GOPATH=$HOME/go
+PATH=$PATH:$GOPATH/bin
+
 # Update PATH. Add coreutils.
 PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 
