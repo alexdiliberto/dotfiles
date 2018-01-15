@@ -7,12 +7,12 @@ atom-beautify
 atom-handlebars
 atom-reveal-file-in-finder
 atom-typescript
-case-keep-replace
 change-case
 copy-path
 docblockr
 duplicate-line-or-selection
 editorconfig
+ember-snippets
 file-icons
 highlight-selected
 language-apache
