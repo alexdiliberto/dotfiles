@@ -8,6 +8,7 @@ code-settings-sync
 diff
 ember-related-files
 emberes6snippets
+ember-module-snippets
 tslint
 vsc-ember-cli
 vscode-ember
