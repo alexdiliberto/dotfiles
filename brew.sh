@@ -109,6 +109,7 @@ brew install nvm
 brew install pinentry-mac
 brew install postgresql
 brew install rbenv
+brew install ren
 brew install ruby-build
 brew install rust
 brew install sl
