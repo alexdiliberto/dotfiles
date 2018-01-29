@@ -314,6 +314,7 @@
 
 [pager]
 
+  # https://github.com/git/git/tree/master/contrib/diff-highlight
 	log = diff-highlight | less
 	show = diff-highlight | less
 	diff = diff-highlight | less
