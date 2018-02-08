@@ -19,7 +19,7 @@
   core:
     customFileTypes:
       "text.html.htmlbars": [
-        "language-ember-htmlbars"
+        "hbs"
       ]
     telemetryConsent: "no"
     themes: [
