@@ -6,6 +6,81 @@
 
 [alias]
 
+  # basic
+  st = status -s
+  s = status -s
+  cl = clone
+  ci = commit
+  co = checkout
+  br = branch
+  r = reset
+  cp = cherry-pick
+  gr = grep -Ii
+
+  # tweak defaults
+  diff = diff --word-diff
+  branch = branch -ra
+  grep = grep -Ii
+  bra = branch -ra
+  ai = add --interactive
+
+  # grep on filename
+  f = "!git ls-files | grep -i"
+
+  # commit
+  cm = commit -m
+  cma = commit -a -m
+  ca = commit --amend
+  amend = commit --amend
+  caa = commit -a --amend -C HEAD
+
+  # log commands
+  ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  lc  = "!f() { git ll "$1"^.."$1"; }; f"
+  lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+  fl = log -u
+  filelog = log -u
+
+  # diff
+  dwd = diff --word-diff
+  dc = diff --cached
+
+  # diff last commit
+  dlc = diff --cached HEAD^
+  dr  = "!f() { git diff -w "$1"^.."$1"; }; f"
+  diffr  = "!f() { git diff "$1"^.."$1"; }; f"
+
+  # reset commands
+  r1 = reset HEAD^
+  r2 = reset HEAD^^
+  rh = reset --hard
+  rh1 = reset HEAD^ --hard
+  rh2 = reset HEAD^^ --hard
+
+  # stash
+  sl = stash list
+  sa = stash apply
+  ss = stash save
+
+  # various useful
+  # last tag created
+  lasttag = describe --tags --abbrev=0
+  lt = describe --tags --abbrev=0
+
+  # conflict/merges
+  ours = "!f() { git co --ours $@ && git add $@; }; f"
+  theirs = "!f() { git co --theirs $@ && git add $@; }; f"
+
+  # list remotes
+  rem = "!git config -l | grep remote.*url | tail -n +2"
+
+  # initial empty commit
+  empty = "!git commit -am\"[empty] Initial commit\" --allow-empty"
+
+  # worktree list
+  wl = worktree list
+
 	# View all branches containing a given commit hash
 	# Usage: git contains <hash>
 	contains = branch -a --contains
@@ -79,7 +154,7 @@
   # List all remote branches, ordered by last commit date
   list-remote-branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
 
-	# Delete branched that have already been merged to master and prune origin
+	# Delete branches that have already been merged to master and prune origin
 	delete-merged-branches = "!git branch --merged master | grep -v -e 'master' -e '\\*' | xargs -n 1 git branch -d && git remote prune origin"
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
