@@ -62,6 +62,7 @@
   sl = stash list
   sa = stash apply
   ss = stash save
+	sp = stash pop
 
   # various useful
   # last tag created
@@ -81,30 +82,30 @@
   # worktree list
   wl = worktree list
 
-	# View all branches containing a given commit hash
-	# Usage: git contains <hash>
-	contains = branch -a --contains
+  # View all branches containing a given commit hash
+  # Usage: git contains <hash>
+  contains = branch -a --contains
 
-	# Update your current branch from develop
-	# ** Rewrites history **
-	# Usage: git up
-	up = pull --rebase --autostash origin develop
+  # Update your current branch from develop
+  # ** Rewrites history **
+  # Usage: git up
+  up = pull --rebase --autostash origin develop
 
-	# Start a feature branch based off of latest develop branch
-	# Usage: git start <name-of-feature>
-	start = "!sh -c \"git checkout develop && git pull && git cb feature/$1\" -"
+  # Start a feature branch based off of latest develop branch
+  # Usage: git start <name-of-feature>
+  start = "!sh -c \"git checkout develop && git pull && git cb feature/$1\" -"
 
-	# Start a hotfix branch based off of latest master branch
-	# Usage: git hotfix <name-of-production-patch>
-	hotfix = "!sh -c \"git checkout master && git pull && git cb hotfix/$1\" -"
+  # Start a hotfix branch based off of latest master branch
+  # Usage: git hotfix <name-of-production-patch>
+  hotfix = "!sh -c \"git checkout master && git pull && git cb hotfix/$1\" -"
 
-	# Create a "work in progress" commit with your current changes
-	# Usage: git wip
-	wip = !git add . && git commit -am "WIP"
+  # Create a "work in progress" commit with your current changes
+  # Usage: git wip
+  wip = !git add . && git commit -am "WIP"
 
-	# Undo your last commit
-	# Usage: git undo
-	undo = reset --soft HEAD~1
+  # Undo your last commit
+  # Usage: git undo
+  undo = reset --soft HEAD~1
 
   # Add staged changes to a specified commit (may introduce conflicts during rebase)
   # ** Rewrites history **
@@ -122,122 +123,122 @@
   # Usage: git edit <commit-hash>
   edit = "!sh -c \"git rebase $1^ --interactive --autostash\" -"
 
-	# Push the current branch to the remote "origin", and set it to track the upstream branch
-	# Usage: git publish
-	publish = "!git push -u origin $(git branch-name)"
+  # Push the current branch to the remote "origin", and set it to track the upstream branch
+  # Usage: git publish
+  publish = "!git push -u origin $(git branch-name)"
 
-	# Remove the current branch from the remote
-	# Usage: git unpublish
-	unpublish = "!git push origin :$(git branch-name)"
+  # Remove the current branch from the remote
+  # Usage: git unpublish
+  unpublish = "!git push origin :$(git branch-name)"
 
   # "Safer" force push -- see http://weiqingtoh.github.io/force-with-lease/
   # Usage: git pushf
   pushf = push --force-with-lease
 
-	# Delete merged branches
-	# Usage: git cleanup
-	cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
+  # Delete merged branches
+  # Usage: git cleanup
+  cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
 
-	# Create a new branch
-	# Usage: git cb <branch-name>
-	cb = checkout -b
+  # Create a new branch
+  # Usage: git cb <branch-name>
+  cb = checkout -b
 
-	# Get the current branch name (not so useful in itself, but used in other aliases)
-	branch-name = "!git rev-parse --abbrev-ref HEAD"
+  # Get the current branch name (not so useful in itself, but used in other aliases)
+  branch-name = "!git rev-parse --abbrev-ref HEAD"
 
-	# `git checkout` shorthand
-	co = checkout
+  # `git checkout` shorthand
+  co = checkout
 
-	# List of the branches in most recently used order
-	list-branches = "branch --sort=committerdate"
+  # List of the branches in most recently used order
+  list-branches = "branch --sort=committerdate"
 
   # List all remote branches, ordered by last commit date
   list-remote-branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
 
-	# Delete branches that have already been merged to master and prune origin
-	delete-merged-branches = "!git branch --merged master | grep -v -e 'master' -e '\\*' | xargs -n 1 git branch -d && git remote prune origin"
+  # Delete branches that have already been merged to master and prune origin
+  delete-merged-branches = "!git branch --merged master | grep -v -e 'master' -e '\\*' | xargs -n 1 git branch -d && git remote prune origin"
 
-	# View abbreviated SHA, description, and history graph of the latest 20 commits
-	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+  # View abbreviated SHA, description, and history graph of the latest 20 commits
+  l = log --pretty=oneline -n 20 --graph --abbrev-commit
 
-	# View the current working tree status using the short format
-	s = status -s
+  # View the current working tree status using the short format
+  s = status -s
 
-	# Show the diff between the latest commit and the current state
-	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+  # Show the diff between the latest commit and the current state
+  d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 
-	# `git di $number` shows the diff between the state `$number` revisions ago and the current state
-	di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
+  # `git di $number` shows the diff between the state `$number` revisions ago and the current state
+  di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
 
-	# Pull in remote changes for the current repository and all its submodules
-	p = !"git pull; git submodule foreach git pull origin master"
+  # Pull in remote changes for the current repository and all its submodules
+  p = !"git pull; git submodule foreach git pull origin master"
 
-	# Clone a repository including all submodules
-	c = clone --recursive
+  # Clone a repository including all submodules
+  c = clone --recursive
 
-	# Commit all changes
-	ca = !git add -A && git commit -av
+  # Commit all changes
+  ca = !git add -A && git commit -av
 
-	# Switch to a branch, creating it if necessary
-	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+  # Switch to a branch, creating it if necessary
+  go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
 
-	# Show verbose output about tags, branches or remotes
-	tags = tag -l
-	branches = branch -a
-	remotes = remote -v
+  # Show verbose output about tags, branches or remotes
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
 
-	# List aliases
-	aliases = config --get-regexp alias
+  # List aliases
+  aliases = config --get-regexp alias
 
-	# Amend the currently staged files to the latest commit
-	amend = commit --amend --reuse-message=HEAD
+  # Amend the currently staged files to the latest commit
+  amend = commit --amend --reuse-message=HEAD
 
-	# Credit an author on the latest commit
-	credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
+  # Credit an author on the latest commit
+  credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
 
-	# Interactive rebase with the given number of latest commits
-	reb = "!r() { git rebase -i HEAD~$1; }; r"
+  # Interactive rebase with the given number of latest commits
+  reb = "!r() { git rebase -i HEAD~$1; }; r"
 
-	# Remove the old tag with this name and tag the latest commit with it.
-	retag = "!r() { git tag -d $1 && git push origin :refs/tags/$1 && git tag $1; }; r"
+  # Remove the old tag with this name and tag the latest commit with it.
+  retag = "!r() { git tag -d $1 && git push origin :refs/tags/$1 && git tag $1; }; r"
 
-	# Find branches containing commit
-	fb = "!f() { git branch -a --contains $1; }; f"
+  # Find branches containing commit
+  fb = "!f() { git branch -a --contains $1; }; f"
 
-	# Find tags containing commit
-	ft = "!f() { git describe --always --contains $1; }; f"
+  # Find tags containing commit
+  ft = "!f() { git describe --always --contains $1; }; f"
 
-	# Find commits by source code
-	fc = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
+  # Find commits by source code
+  fc = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
 
-	# Find commits by commit message
-	fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
+  # Find commits by commit message
+  fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
 
   # Find commits containing a lost peice of code by searching the reflog
   lost = "!f() { git log -g --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
 
-	# Remove branches that have already been merged with master
-	# a.k.a. ‘delete merged’
-	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+  # Remove branches that have already been merged with master
+  # a.k.a. ‘delete merged’
+  dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 
-	# List contributors with number of commits
-	contributors = shortlog --summary --numbered
+  # List contributors with number of commits
+  contributors = shortlog --summary --numbered
 
-	# Merge GitHub pull request on top of the current branch or,
-	# if a branch name is specified, on top of the specified branch
-	mpr = "!f() { \
-		declare currentBranch=\"$(git symbolic-ref --short HEAD)\"; \
-		declare branch=\"${2:-$currentBranch}\"; \
-		if [ $(printf \"%s\" \"$1\" | grep '^[0-9]\\+$' > /dev/null; printf $?) -eq 0 ]; then \
-			git fetch origin refs/pull/$1/head:pr/$1 && \
-			git checkout -B $branch && \
-			git rebase $branch pr/$1 && \
-			git checkout -B $branch && \
-			git merge pr/$1 && \
-			git branch -D pr/$1 && \
-			git commit --amend -m \"$(git log -1 --pretty=%B)\n\nCloses #$1.\"; \
-		fi \
-	}; f"
+  # Merge GitHub pull request on top of the current branch or,
+  # if a branch name is specified, on top of the specified branch
+  mpr = "!f() { \
+  	declare currentBranch=\"$(git symbolic-ref --short HEAD)\"; \
+  	declare branch=\"${2:-$currentBranch}\"; \
+  	if [ $(printf \"%s\" \"$1\" | grep '^[0-9]\\+$' > /dev/null; printf $?) -eq 0 ]; then \
+  		git fetch origin refs/pull/$1/head:pr/$1 && \
+  		git checkout -B $branch && \
+  		git rebase $branch pr/$1 && \
+  		git checkout -B $branch && \
+  		git merge pr/$1 && \
+  		git branch -D pr/$1 && \
+  		git commit --amend -m \"$(git log -1 --pretty=%B)\n\nCloses #$1.\"; \
+  	fi \
+  }; f"
 
 [apply]
 
