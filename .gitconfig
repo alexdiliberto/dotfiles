@@ -34,7 +34,7 @@
   fu = fetch upstream -v
 
   # commit
-  g = commit -m
+  cm = commit -m
   cma = commit -a -m
 	amend = commit --amend --reuse-message=HEAD
   caa = commit -a --amend -C HEAD
