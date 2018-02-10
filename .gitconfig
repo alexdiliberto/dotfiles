@@ -30,14 +30,13 @@
   ba = branch -ravv
 
   # fetch
-  f = git fetch origin -v
-  fu = git fetch upstream -v
+  f = fetch origin -v
+  fu = fetch upstream -v
 
   # commit
-  cm = commit -m
+  g = commit -m
   cma = commit -a -m
-  ca = commit --amend
-  amend = commit --amend
+	amend = commit --amend --reuse-message=HEAD
   caa = commit -a --amend -C HEAD
 
   # grep on filename
@@ -198,9 +197,6 @@
 
   # List aliases
   aliases = config --get-regexp alias
-
-  # Amend the currently staged files to the latest commit
-  amend = commit --amend --reuse-message=HEAD
 
   # Credit an author on the latest commit
   credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
