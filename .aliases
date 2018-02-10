@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
 
-# Easier navigation: .., ..., ...., ....., ~ and -
+# Easier navigation: .., ..., ...., .....
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
-alias -- -="cd -"
 
 # Shortcuts
 alias d="cd ~/Dropbox"
@@ -23,23 +21,12 @@ alias bg='echo Running: bundle exec guard... ; bundle exec guard ;'
 
 # Git
 alias g='git'
-alias gb='git branch'
-alias gba='git branch -a'
-alias gbav='git branch -avv'
-alias gcav='git commit -av'
-alias gca='git commit -a'
 alias gd='git diff | subl'
-alias gdw='git diff -w | subl'
 alias gdc='git diff --cached | subl'
-alias gdcw='git diff -w --cached | subl'
 alias gdt='git difftool'
 alias gdtc='git difftool --cached'
 alias gp?='git log --pretty=oneline origin/master..HEAD'
-alias gs='git status'
 alias gpom='git pull origin master'
-alias gf='git fetch origin -v'
-alias gfu='git fetch upstream -v'
-alias gco='git checkout'
 
 # Homebrew
 alias bu='brew update; brew upgrade;'

@@ -7,25 +7,31 @@
 [alias]
 
   # basic
-  st = status -s
+  a = add
+  ai = add --interactive
+  ap = add --patch
   s = status -s
+  st = status -s
   cl = clone
   ci = commit
   co = checkout
+  b = branch
   br = branch
   r = reset
   cp = cherry-pick
-  gr = grep -Ii
 
   # tweak defaults
   diff = diff --word-diff
-  branch = branch -ra
+  branch = branch -ravv
   grep = grep -Ii
-  bra = branch -ra
-  ai = add --interactive
+  gr = grep -Ii
 
-  # grep on filename
-  f = "!git ls-files | grep -i"
+  # branch
+  ba = branch -ravv
+
+  # fetch
+  f = git fetch origin -v
+  fu = git fetch upstream -v
 
   # commit
   cm = commit -m
@@ -33,6 +39,9 @@
   ca = commit --amend
   amend = commit --amend
   caa = commit -a --amend -C HEAD
+
+  # grep on filename
+  f = "!git ls-files | grep -i"
 
   # log commands
   ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
