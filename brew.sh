@@ -104,6 +104,7 @@ brew install elixir
 brew install go
 brew install gpg-agent
 brew install heroku
+brew install jq
 brew install mongodb
 brew install nvm
 brew install pinentry-mac
