@@ -40,7 +40,7 @@
   caa = commit -a --amend -C HEAD
 
   # grep on filename
-  f = "!git ls-files | grep -i"
+  ffn = "!git ls-files | grep -i"
 
   # log commands
   ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
