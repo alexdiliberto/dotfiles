@@ -1,6 +1,6 @@
 NPM Packages
 -----------------------
-yarn global add bower cloc commitizen conventional-changelog-cli ember-cli empty-trash-cli fkill-cli gitbook-cli hpm-cli local-web-server np phantomjs-prebuilt qunitjs speed-test surge trash-cli typescript vorlon vtop
+yarn global add bower cloc commitizen conventional-changelog-cli ember-cli empty-trash-cli fkill-cli gitbook-cli hpm-cli local-web-server np phantomjs-prebuilt prettier qunitjs speed-test surge trash-cli typescript vorlon vtop
 
 bower
 cloc
@@ -14,6 +14,7 @@ hpm-cli
 local-web-server
 np
 phantomjs-prebuilt
+prettier
 qunitjs
 speed-test
 surge
