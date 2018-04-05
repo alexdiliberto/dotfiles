@@ -33,15 +33,35 @@
     fontSize: 15
     invisibles: {}
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?…"
-    preferredLineLength: 120
+    preferredLineLength: 100
     showIndentGuide: true
     softWrap: true
     softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "884440fb-9e84-fcf9-8239-ecee423c921e"
-  "linter-eslint":
-    fixOnSave: true
+  "file-types":
+    hbs: "text.html.htmlbars"
+  "linter-eslint": {}
   "linter-ui-default":
     panelHeight: 81
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      showInStatusBar: true
+    prettierOptions:
+      arrowParens: "always"
+    useEslint: true
   welcome:
     showOnStartup: false
+".css.source.styled":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!#$@%^&*|+=[]{}`?…"
+".handlebars.html.text":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?…"
+".html.htmlbars.text":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?…"
+".js.jsx.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?…"
