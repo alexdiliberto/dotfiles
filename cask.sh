@@ -60,6 +60,7 @@ apps=(
 # Fonts
 fonts=(
   font-clear-sans
+  font-fira-code
   font-hack
   font-roboto
 )
