@@ -11,6 +11,9 @@ PATH=$PATH:$GOPATH/bin
 # Update PATH. Add coreutils.
 PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 
+# Update Path. rustup-init
+PATH="$HOME/.cargo/bin:$PATH"
+
 # Update PATH. Use rbenv to dynamically select which Ruby to use.
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
