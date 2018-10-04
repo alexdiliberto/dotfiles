@@ -1,11 +1,12 @@
 NPM Packages
 -----------------------
-yarn global add bower cloc commitizen conventional-changelog-cli ember-cli ember-cli-update empty-trash-cli fkill-cli hpm-cli jscodeshift localtunnel local-web-server np prettier qunitjs speed-test surge trash-cli typescript vorlon vtop
+yarn global add bower cloc commitizen conventional-changelog-cli cz-conventional-changelog ember-cli ember-cli-update empty-trash-cli fkill-cli hpm-cli jscodeshift localtunnel local-web-server np prettier qunitjs speed-test surge trash-cli typescript vorlon vtop
 
 bower
 cloc
 commitizen
 conventional-changelog-cli
+cz-conventional-changelog
 ember-cli
 ember-cli-update
 empty-trash-cli
