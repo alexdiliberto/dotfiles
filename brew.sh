@@ -98,11 +98,13 @@ brew install zopfli
 
 # Install Alex's other important binaries
 brew tap codeclimate/formulae
+brew tap git-chglog/git-chglog
 brew install asciinema
 brew install codeclimate
 brew install couchdb
 brew install cowsay
 brew install elixir
+brew install git-chglog
 brew install go
 brew install gpg-agent
 brew install heroku
