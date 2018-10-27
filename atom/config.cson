@@ -29,7 +29,7 @@
     whitespace:
       removeTrailingWhitespace: false
   editor:
-    fontFamily: "Menlo"
+    fontFamily: "Fira Code"
     fontSize: 15
     invisibles: {}
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?…"
