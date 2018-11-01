@@ -12,4 +12,5 @@ ember-module-snippets
 tslint
 vsc-ember-cli
 vscode-ember
+vscode-ember-snippets
 vscode-eslint
