@@ -6,6 +6,7 @@ Visual Studio Code Packages
 change-case
 code-settings-sync
 diff
+ember-decorators
 ember-related-files
 emberes6snippets
 ember-module-snippets
