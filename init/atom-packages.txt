@@ -32,6 +32,7 @@ prettier-atom
 sort-lines
 sublime-style-column-selection
 teletype
+terminal-plus
 toggle-quotes
 
 
