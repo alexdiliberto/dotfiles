@@ -313,6 +313,7 @@
 
 [diff]
 
+	tool = Kaleidoscope
 	# Detect copies as well as renames
 	renames = copies
 
@@ -328,6 +329,7 @@
 
 [merge]
 
+	tool = Kaleidoscope
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
 
@@ -368,10 +370,6 @@
 
 	prompt = false
 
-[diff]
-
-	tool = Kaleidoscope
-
 [mergetool "Kaleidoscope"]
 
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
@@ -380,14 +378,6 @@
 [mergetool]
 
 	prompt = false
-
-[merge]
-
-	tool = Kaleidoscope
-
-[push]
-
-	default = matching
 
 [grep]
 
