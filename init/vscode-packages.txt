@@ -5,6 +5,7 @@ Visual Studio Code Packages
 
 change-case
 code-settings-sync
+code-spell-checker
 diff
 ember-decorators
 ember-related-files
