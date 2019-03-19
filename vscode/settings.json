@@ -4,7 +4,7 @@
   "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
   "editor.renderWhitespace": "boundary",
   "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?", // Default: `~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?
-  
+
   "explorer.confirmDragAndDrop": false,
 
   "eslint.autoFixOnSave": true,
@@ -19,5 +19,7 @@
   // "html.format.indentInnerHtml": true,
   // "html.format.indentHandlebars": true,
 
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
+  
+  "workbench.iconTheme": "vscode-icons"
 }

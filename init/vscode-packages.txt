@@ -3,6 +3,7 @@ Install: Ctrl+P -> ext install <name>
 Visual Studio Code Packages
 -----------------------
 
+bracket-pair-colorizer-2
 change-case
 code-settings-sync
 code-spell-checker
@@ -11,9 +12,11 @@ ember-decorators
 ember-related-files
 emberes6snippets
 ember-module-snippets
+markdown-all-in-one
 tslint
 vsc-ember-cli
 vscode-ember
 vscode-ember-snippets
 vscode-eslint
 vscode-tailwindcss
+vscode-icons
