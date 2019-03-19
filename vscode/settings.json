@@ -3,7 +3,8 @@
   "editor.tabSize": 2,
   "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
   "editor.renderWhitespace": "boundary",
-
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?", // Default: `~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?
+  
   "explorer.confirmDragAndDrop": false,
 
   "eslint.autoFixOnSave": true,
