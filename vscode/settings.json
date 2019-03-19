@@ -4,11 +4,12 @@
   "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
   "editor.renderWhitespace": "boundary",
   "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?", // Default: `~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?
-
+  "editor.wordWrapColumn": 120,
+  
   "explorer.confirmDragAndDrop": false,
 
   "eslint.autoFixOnSave": true,
-  "eslint.packageManager": "yarn",
+  // "eslint.packageManager": "yarn",
   // "eslint.validate": [
   //     "javascript",
   //     "javascriptreact",
@@ -16,10 +17,17 @@
   //     { "language": "glimmer", "autoFix": true }
   // ],
 
-  // "html.format.indentInnerHtml": true,
-  // "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true,
+  "html.format.indentHandlebars": true,
 
   "window.zoomLevel": 0,
   
-  "workbench.iconTheme": "vscode-icons"
+  "workbench.iconTheme": "vscode-icons",
+
+  // Langugage specific settings
+  "[markdown]": {
+    "editor.lineNumbers": "off",
+    "editor.wordWrap": "bounded",
+    "files.trimTrailingWhitespace": false
+  }
 }
