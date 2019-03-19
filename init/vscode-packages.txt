@@ -18,5 +18,6 @@ vsc-ember-cli
 vscode-ember
 vscode-ember-snippets
 vscode-eslint
-vscode-tailwindcss
 vscode-icons
+vscode-tailwindcss
+vscode-toggle-quotes
