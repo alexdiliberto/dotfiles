@@ -5,7 +5,7 @@
   "editor.renderWhitespace": "boundary",
   "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?", // Default: `~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?
   "editor.wordWrapColumn": 120,
-  
+
   "explorer.confirmDragAndDrop": false,
 
   "eslint.autoFixOnSave": true,
@@ -23,7 +23,8 @@
   "window.zoomLevel": 0,
   
   "workbench.iconTheme": "vscode-icons",
-
+  "workbench.startupEditor": "none",
+  
   // Langugage specific settings
   "[markdown]": {
     "editor.lineNumbers": "off",
