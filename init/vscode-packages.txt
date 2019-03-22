@@ -12,6 +12,7 @@ mfeckies.ember-decorators
 josa.ember-related-files
 candidmetrics.ember-module-snippets
 dhedgecock.ember-syntax
+eamodio.gitlens
 yzhang.markdown-all-in-one
 max-david.vs-ember-helper
 felixrieseberg.vsc-ember-cli
