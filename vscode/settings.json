@@ -3,8 +3,13 @@
   "editor.tabSize": 2,
   "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
   "editor.renderWhitespace": "boundary",
+  "editor.snippetSuggestions": "top",
   "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?", // Default: `~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?
+  "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 120,
+
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
 
   "explorer.confirmDragAndDrop": false,
 
@@ -22,8 +27,9 @@
 
   "window.zoomLevel": 0,
   
+  "workbench.colorTheme": "Ember Frost",
   "workbench.iconTheme": "vscode-icons",
-  "workbench.startupEditor": "none",
+  "workbench.startupEditor": "newUntitledFile",
   
   // Langugage specific settings
   "[markdown]": {
