@@ -1,9 +1,11 @@
 {
-  "editor.fontSize": 15,
-  "editor.tabSize": 2,
   "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 15,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
   "editor.renderWhitespace": "boundary",
   "editor.snippetSuggestions": "top",
+  "editor.tabSize": 2,
   "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?", // Default: `~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 120,
@@ -12,7 +14,8 @@
   "emmet.triggerExpansionOnTab": true,
 
   "explorer.confirmDragAndDrop": false,
-
+  "explorer.confirmDelete": false,
+  
   "eslint.autoFixOnSave": true,
   // "eslint.packageManager": "yarn",
   // "eslint.validate": [
@@ -21,6 +24,8 @@
   //     { "language": "html", "autoFix": true },
   //     { "language": "glimmer", "autoFix": true }
   // ],
+
+  "files.autoSave": "off",
 
   "html.format.indentInnerHtml": true,
   "html.format.indentHandlebars": true,
@@ -33,8 +38,8 @@
   
   // Langugage specific settings
   "[markdown]": {
-    "editor.lineNumbers": "off",
-    "editor.wordWrap": "bounded",
-    "files.trimTrailingWhitespace": false
+      "editor.lineNumbers": "off",
+      "editor.wordWrap": "bounded",
+      "files.trimTrailingWhitespace": false
   }
 }
