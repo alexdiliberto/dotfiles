@@ -14,6 +14,7 @@ candidmetrics.ember-module-snippets
 dhedgecock.ember-syntax
 eamodio.gitlens
 yzhang.markdown-all-in-one
+esbenp.prettier-vscode
 max-david.vs-ember-helper
 felixrieseberg.vsc-ember-cli
 ciena-blueplanet.vsc-ember-frost

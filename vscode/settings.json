@@ -30,6 +30,10 @@
   "html.format.indentInnerHtml": true,
   "html.format.indentHandlebars": true,
 
+  "prettier.arrowParens": "always",
+  "prettier.printWidth": 100,
+  "prettier.singleQuote": true,
+
   "window.zoomLevel": 0,
   
   "workbench.colorTheme": "Ember Frost",
