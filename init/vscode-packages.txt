@@ -2,25 +2,26 @@ Install: Ctrl+P -> ext install <name>
 
 Visual Studio Code Packages
 -----------------------
+code --list-extensions | xargs -L 1 echo code --install-extension
 
-coenraads.bracket-pair-colorizer-2
-wmaurer.change-case
-shan.code-settings-sync
-streetsidesoftware.code-spell-checker
-rafaelmaiolla.diff
-mfeckies.ember-decorators
-josa.ember-related-files
-candidmetrics.ember-module-snippets
-dhedgecock.ember-syntax
-eamodio.gitlens
-yzhang.markdown-all-in-one
-esbenp.prettier-vscode
-max-david.vs-ember-helper
-felixrieseberg.vsc-ember-cli
-ciena-blueplanet.vsc-ember-frost
-emberjs.vscode-ember
-jrock2004.vscode-ember-snippets
-dbaeumer.vscode-eslint
-vscode-icons-team.vscode-icons
-bradlc.vscode-tailwindcss
-britesnow.vscode-toggle-quotes
+code --install-extension bradlc.vscode-tailwindcss
+code --install-extension BriteSnow.vscode-toggle-quotes
+code --install-extension candidmetrics.ember-module-snippets
+code --install-extension ciena-blueplanet.vsc-ember-frost
+code --install-extension CoenraadS.bracket-pair-colorizer-2
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension dhedgecock.ember-syntax
+code --install-extension eamodio.gitlens
+code --install-extension emberjs.vscode-ember
+code --install-extension esbenp.prettier-vscode
+code --install-extension felixrieseberg.vsc-ember-cli
+code --install-extension josa.ember-related-files
+code --install-extension jrock2004.vscode-ember-snippets
+code --install-extension max-david.vs-ember-helper
+code --install-extension mfeckies.ember-decorators
+code --install-extension rafaelmaiolla.diff
+code --install-extension Shan.code-settings-sync
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension vscode-icons-team.vscode-icons
+code --install-extension wmaurer.change-case
+code --install-extension yzhang.markdown-all-in-one
