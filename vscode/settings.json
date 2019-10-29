@@ -1,5 +1,6 @@
 {
-  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "FiraCode-Retina, Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
   "editor.fontSize": 15,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": false,
@@ -31,7 +32,7 @@
   "html.format.indentHandlebars": true,
 
   "prettier.arrowParens": "always",
-  "prettier.printWidth": 100,
+  "prettier.printWidth": 120,
   "prettier.singleQuote": true,
 
   "window.zoomLevel": 0,
