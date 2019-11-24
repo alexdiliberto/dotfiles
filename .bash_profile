@@ -17,12 +17,13 @@ PATH="$HOME/.cargo/bin:$PATH"
 # Update PATH. Use rbenv to dynamically select which Ruby to use.
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-# Load NVM (https://github.com/creationix/nvm#install-script)
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Load Volta
+export VOLTA_HOME="$HOME/.volta"
+[ -s "$VOLTA_HOME/load.sh" ] && . "$VOLTA_HOME/load.sh"
 
-# Export PATH (After "Load NVM" step)
+PATH="$VOLTA_HOME/bin:$PATH"
+
+# Export PATH (After "Load Volta" step)
 export PATH
 
 # Increase ulimit to prevent error `Too many open files in system (ENFILE)``
