@@ -17,8 +17,11 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension felixrieseberg.vsc-ember-cli
 code --install-extension josa.ember-related-files
 code --install-extension jrock2004.vscode-ember-snippets
+code --install-extension lifeart.vscode-ember-unstable
+code --install-extension lifeart.vscode-glimmer-syntax
 code --install-extension max-david.vs-ember-helper
 code --install-extension mfeckies.ember-decorators
+code --install-extension mrmlnc.vscode-apache
 code --install-extension rafaelmaiolla.diff
 code --install-extension Shan.code-settings-sync
 code --install-extension streetsidesoftware.code-spell-checker
