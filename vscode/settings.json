@@ -40,7 +40,7 @@
   "window.zoomLevel": 0,
   
   "workbench.colorTheme": "Ember Frost",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   
   // Langugage specific settings

@@ -22,6 +22,7 @@ code --install-extension lifeart.vscode-glimmer-syntax
 code --install-extension max-david.vs-ember-helper
 code --install-extension mfeckies.ember-decorators
 code --install-extension mrmlnc.vscode-apache
+code --install-extension PKief.material-icon-theme
 code --install-extension rafaelmaiolla.diff
 code --install-extension Shan.code-settings-sync
 code --install-extension streetsidesoftware.code-spell-checker
