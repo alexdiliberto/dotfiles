@@ -1,8 +1,8 @@
 [user]
 
-	name = Alex DiLiberto
-	email = alex@alexdiliberto.com
-	signingkey = #secret-key-id (gpg --list-secret-keys) (/usr/bin/ssh-add -A) (/usr/bin/ssh-add -K <key>)
+  name = Alex DiLiberto
+  email = alex@alexdiliberto.com
+  signingkey = #secret-key-id (gpg --list-secret-keys) (/usr/bin/ssh-add -A) (/usr/bin/ssh-add -K <key>)
 
 [alias]
 
