@@ -38,6 +38,7 @@ alias gemcleanup='gem cleanup;'
 
 # Yarn/NPM Aliases
 alias y='yarn'
+alias dedupe='npx yarn-deduplicate'
 alias nu='npm install -g npm@latest; npm update -g;'
 alias npmlist='npm -g ls --depth=0'
 alias npmold='npm -g outdated --depth=0'
