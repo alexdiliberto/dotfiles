@@ -6,6 +6,11 @@
   "editor.formatOnSave": false,
   "editor.renderWhitespace": "boundary",
   "editor.snippetSuggestions": "top",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true,
+    "source.organizeImports": false
+  },
   "editor.tabSize": 2,
   "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?", // Default: `~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?
   "editor.wordWrap": "wordWrapColumn",
@@ -17,7 +22,7 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   
-  "eslint.autoFixOnSave": true,
+  // "eslint.autoFixOnSave": true,
   // "eslint.packageManager": "yarn",
   "eslint.validate": [
     "javascript",
@@ -43,10 +48,28 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   
-  // Langugage specific settings
+  // Language specific settings
   "[markdown]": {
       "editor.lineNumbers": "off",
       "editor.wordWrap": "bounded",
       "files.trimTrailingWhitespace": false
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    //"editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "[typescriptreact]": {
+    //"editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
   }
 }
