@@ -144,7 +144,7 @@
 
   # Delete merged branches and prune origin
   # Usage: git cleanup
-  cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d && git remote prune origin"
+  cleanup = "!git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D && git remote prune origin"
 
   # Create a new branch
   # Usage: git cb <branch-name>
