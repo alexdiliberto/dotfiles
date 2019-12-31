@@ -80,7 +80,6 @@ brew install xz
 
 # Install other useful binaries.
 brew install ack
-brew install dark-mode
 #brew install exiv2
 brew install git
 brew install git-lfs
@@ -113,7 +112,6 @@ brew install gpg-agent
 brew install heroku
 brew install jq
 brew install mongodb
-brew install nvm
 brew install pinentry-mac
 brew install postgresql
 brew install puma/puma/puma-dev
@@ -126,7 +124,6 @@ brew install the_silver_searcher
 brew install thefuck
 brew install watchman
 brew install webp
-brew install yarn
 brew install yuicompressor
 
 # Remove outdated versions from the cellar.
