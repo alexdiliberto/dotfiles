@@ -23,6 +23,7 @@ apps=(
   flux
   google-chrome
   google-chrome-canary
+  gpg-suite
   hex-fiend
   hyper
   imagealpha
