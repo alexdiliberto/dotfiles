@@ -37,7 +37,7 @@ ulimit -n 2560
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
 for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+  [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
 
@@ -54,7 +54,7 @@ shopt -s cdspell;
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
 # * Recursive globbing, e.g. `echo **/*.txt`
 for option in autocd globstar; do
-	shopt -s "$option" 2> /dev/null;
+  shopt -s "$option" 2> /dev/null;
 done;
 
 # In order for gpg to find gpg-agent, gpg-agent must be running, and there must be an env
@@ -65,7 +65,7 @@ done;
 # Add the following to your shell init to set up gpg-agent automatically for every shell
 # See: https://gist.github.com/bmhatfield/cc21ec0a3a2df963bffa3c1f884b676b
 # See: https://github.com/pstadler/keybase-gpg-github
-if test -f ~/.gnupg/.gpg-agent-info -a -n "$(pgrep gpg-agent)"; then
+if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
   source ~/.gnupg/.gpg-agent-info
   export GPG_AGENT_INFO
   GPG_TTY=$(tty)
@@ -76,16 +76,16 @@ fi
 
 # Add tab completion for many Bash commands
 if which brew &> /dev/null && [ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]; then
-	# Ensure existing Homebrew v1 completions continue to work
-	export BASH_COMPLETION_COMPAT_DIR="$(brew --prefix)/etc/bash_completion.d";
-	source "$(brew --prefix)/etc/profile.d/bash_completion.sh";
+  # Ensure existing Homebrew v1 completions continue to work
+  export BASH_COMPLETION_COMPAT_DIR="$(brew --prefix)/etc/bash_completion.d";
+  source "$(brew --prefix)/etc/profile.d/bash_completion.sh";
 elif [ -f /etc/bash_completion ]; then
-	source /etc/bash_completion;
+  source /etc/bash_completion;
 fi;
 
 # Enable tab completion for `g` by marking it as an alias for `git`
 if type _git &> /dev/null; then
-	complete -o default -o nospace -F _git g;
+  complete -o default -o nospace -F _git g;
 fi;
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
