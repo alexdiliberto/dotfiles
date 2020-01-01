@@ -195,5 +195,5 @@ alias reload="exec ${SHELL} -l"
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
-# Other Aliases
-eval $(thefuck --alias)
+# Shell aliases. https://github.com/nvbn/thefuck/wiki/Shell-aliases
+eval "$(thefuck --alias)"

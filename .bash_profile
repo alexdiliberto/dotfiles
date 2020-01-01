@@ -26,9 +26,6 @@ PATH="$VOLTA_HOME/bin:$PATH"
 # Export PATH (After "Load Volta" step)
 export PATH
 
-# Shell aliases. https://github.com/nvbn/thefuck/wiki/Shell-aliases
-eval "$(thefuck --alias)"
-
 # Increase ulimit to prevent error `Too many open files in system (ENFILE)``
 #   http://blog.mact.me/2014/10/22/yosemite-upgrade-changes-open-file-limit`
 ulimit -n 2560
