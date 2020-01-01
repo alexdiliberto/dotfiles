@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-# Make Sublime Text the default editor
-export EDITOR="subl -w"
-export VISUAL="subl -w"
+# Make Visual Studio Code the default editor
+export EDITOR="code -w"
+export VISUAL="code -w"
 
 # Enable persistent REPL history for `node`.
 export NODE_REPL_HISTORY=~/.node_history;
