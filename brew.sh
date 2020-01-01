@@ -112,7 +112,6 @@ brew install gpg-agent
 brew install heroku
 brew install jq
 brew install mongodb
-brew install pinentry-mac
 brew install postgresql
 brew install puma/puma/puma-dev
 brew install rbenv
