@@ -1,17 +1,20 @@
-# Build PATH
-PATH=/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin
+# Update PATH. Add `~/bin`.
+PATH="$HOME/bin:$PATH";
+
 if [ -d "/opt/subversion" ]; then
+  # Update PATH. Add SVN.
   PATH=/opt/subversion/bin:$PATH
 fi
 
 # Go (https://golang.org)
 export GOPATH=$HOME/go
+# Update PATH. Add Go.
 PATH=$PATH:$GOPATH/bin
 
 # Update PATH. Add coreutils.
-PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
 
-# Update Path. rustup-init
+# Update PATH. rustup-init
 PATH="$HOME/.cargo/bin:$PATH"
 
 # Update PATH. Use rbenv to dynamically select which Ruby to use.
@@ -21,10 +24,15 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export VOLTA_HOME="$HOME/.volta"
 [ -s "$VOLTA_HOME/load.sh" ] && . "$VOLTA_HOME/load.sh"
 
+# Update PATH. Add Volta.
 PATH="$VOLTA_HOME/bin:$PATH"
 
-# Export PATH (After "Load Volta" step)
+# Export PATH
 export PATH
+
+# https://blog.zzhou612.com/2019/02/26/automatically-sign-commits-using-gpg-suite-on-macos/
+GPG_TTY=$(tty)
+export GPG_TTY
 
 # Increase ulimit to prevent error `Too many open files in system (ENFILE)``
 #   http://blog.mact.me/2014/10/22/yosemite-upgrade-changes-open-file-limit`
@@ -53,23 +61,6 @@ shopt -s cdspell;
 for option in autocd globstar; do
   shopt -s "$option" 2> /dev/null;
 done;
-
-# In order for gpg to find gpg-agent, gpg-agent must be running, and there must be an env
-# variable pointing GPG to the gpg-agent socket. This little script, which must be sourced
-# in your shell's init script (ie, .bash_profile, .zshrc, whatever), will either start
-# gpg-agent or set up the GPG_AGENT_INFO variable if it's already running.
-
-# Add the following to your shell init to set up gpg-agent automatically for every shell
-# See: https://gist.github.com/bmhatfield/cc21ec0a3a2df963bffa3c1f884b676b
-# See: https://github.com/pstadler/keybase-gpg-github
-if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
-  source ~/.gnupg/.gpg-agent-info
-  export GPG_AGENT_INFO
-  GPG_TTY=$(tty)
-  export GPG_TTY
-else
-  eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
-fi
 
 # Add tab completion for many Bash commands
 if which brew &> /dev/null && [ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]; then
