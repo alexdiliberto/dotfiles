@@ -34,7 +34,11 @@
   ],
 
   "files.autoSave": "off",
-
+  "files.associations": {
+    "*.txt": "diff",
+    "*.ts": "typescriptreact" 
+  },
+  
   "html.format.indentInnerHtml": true,
   "html.format.indentHandlebars": true,
 
