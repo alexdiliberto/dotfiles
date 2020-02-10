@@ -36,6 +36,7 @@
   "files.autoSave": "off",
   "files.associations": {
     "*.txt": "diff",
+    "*.js": "javascriptreact",
     "*.ts": "typescriptreact" 
   },
   
