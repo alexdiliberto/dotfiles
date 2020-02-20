@@ -1,14 +1,16 @@
+# Update PATH. Add `/usr/local/sbin`.
+PATH="/usr/local/sbin:$PATH";
+
 # Update PATH. Add `~/bin`.
 PATH="$HOME/bin:$PATH";
 
+# Update PATH. Add SVN.
 if [ -d "/opt/subversion" ]; then
-  # Update PATH. Add SVN.
   PATH=/opt/subversion/bin:$PATH
 fi
 
-# Go (https://golang.org)
+# Update PATH. Add Go (https://golang.org).
 export GOPATH=$HOME/go
-# Update PATH. Add Go.
 PATH=$PATH:$GOPATH/bin
 
 # Update PATH. Add coreutils.
@@ -18,13 +20,11 @@ PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
 PATH="$HOME/.cargo/bin:$PATH"
 
 # Update PATH. Use rbenv to dynamically select which Ruby to use.
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+eval "$(rbenv init -)"
 
-# Load Volta
+# Update PATH. Add and Load Volta
 export VOLTA_HOME="$HOME/.volta"
 [ -s "$VOLTA_HOME/load.sh" ] && . "$VOLTA_HOME/load.sh"
-
-# Update PATH. Add Volta.
 PATH="$VOLTA_HOME/bin:$PATH"
 
 # Export PATH
