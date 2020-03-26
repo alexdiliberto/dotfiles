@@ -12,6 +12,7 @@
     "source.organizeImports": false
   },
   "editor.tabSize": 2,
+  "editor.rulers": [ 120 ],
   "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?", // Default: `~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 120,
