@@ -224,7 +224,7 @@
   # Find commits containing a lost peice of code by searching the reflog
   lost = "!f() { git log -g --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
 
-  # Remove branches that have already been merged with master
+  # Remove branches that have already been merged with main
   # a.k.a. ‘delete merged’
   dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 
@@ -381,3 +381,7 @@
   log = diff-highlight | less
   show = diff-highlight | less
   diff = diff-highlight | less
+
+[init]
+
+  templateDir = ~/.config/git/template/
