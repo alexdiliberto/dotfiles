@@ -196,4 +196,6 @@ alias reload="exec ${SHELL} -l"
 alias path='echo -e ${PATH//:/\\n}'
 
 # Shell aliases. https://github.com/nvbn/thefuck/wiki/Shell-aliases
-eval "$(thefuck --alias)"
+if which thefuck &> /dev/null; then
+	eval "$(thefuck --alias)"
+fi;

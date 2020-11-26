@@ -1,5 +1,11 @@
-# Update PATH. Add `/usr/local/sbin`.
-PATH="/usr/local/sbin:$PATH";
+export OS="$(uname -s)" # Ubuntu = Linux / Darwin = macOS
+
+# Update initial PATH
+if test "$OS" = "Darwin"; then
+  PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin";
+else if test "$OS" = "Linux"; then
+  PATH="/usr/local/sbin:$PATH";
+fi
 
 # Update PATH. Add `~/bin`.
 PATH="$HOME/bin:$PATH";
@@ -14,13 +20,17 @@ export GOPATH=$HOME/go
 PATH=$PATH:$GOPATH/bin
 
 # Update PATH. Add coreutils.
-PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
+if test "$OS" = "Darwin"; then
+  PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
+fi
 
 # Update PATH. rustup-init
 PATH="$HOME/.cargo/bin:$PATH"
 
 # Update PATH. Use rbenv to dynamically select which Ruby to use.
-eval "$(rbenv init -)"
+if test "$OS" = "Darwin"; then
+  eval "$(rbenv init -)"
+fi
 
 # Update PATH. Add and Load Volta
 export VOLTA_HOME="$HOME/.volta"
