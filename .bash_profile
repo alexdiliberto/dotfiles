@@ -1,10 +1,10 @@
-export OS="$(uname -s)" # Ubuntu = Linux / Darwin = macOS
+export OS="$(uname -s)"; # Ubuntu = Linux / Darwin = macOS
 
 # Update initial PATH
 if test "$OS" = "Darwin"; then
+  PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin";
+elif test "$OS" = "Linux"; then
   PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin";
-else if test "$OS" = "Linux"; then
-  PATH="/usr/local/sbin:$PATH";
 fi
 
 # Update PATH. Add `~/bin`.
@@ -21,7 +21,7 @@ PATH=$PATH:$GOPATH/bin
 
 # Update PATH. Add coreutils.
 if test "$OS" = "Darwin"; then
-  PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
+  PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH";
 fi
 
 # Update PATH. rustup-init
