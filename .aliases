@@ -57,7 +57,6 @@ alias ping="ping -c 5" # ping 5 times ‘by default’
 alias ql="qlmanage -p 2>/dev/null" # preview a file using QuickLook
 alias redo='sudo \!-1'
 alias rmlog="sudo rm /var/log/asl/*" #clear out old log files
-alias top='top -ocpu'
 alias vtop='vtop --theme wizard'
 alias rm=trash # https://github.com/sindresorhus/trash-cli#tip
 alias disableNotificationCenter="launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist && killall NotificationCenter"
