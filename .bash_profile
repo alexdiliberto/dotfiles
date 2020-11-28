@@ -27,10 +27,14 @@ fi
 # Update PATH. rustup-init
 PATH="$HOME/.cargo/bin:$PATH"
 
-# Update PATH. Use rbenv to dynamically select which Ruby to use.
-if test "$OS" = "Darwin"; then
+if which rbenv &> /dev/null; then
+  # Update PATH. Use rbenv to dynamically select which Ruby to use.
   eval "$(rbenv init -)"
-fi
+else
+  # Update PATH. Install Ruby Gems to `~/gems`.
+  export GEM_HOME="$HOME/gems"
+  PATH="$HOME/gems/bin:$PATH"
+fi;
 
 # Update PATH. Add and Load Volta
 export VOLTA_HOME="$HOME/.volta"
