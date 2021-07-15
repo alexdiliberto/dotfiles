@@ -118,6 +118,7 @@ brew install jq
 brew install mongodb
 brew install pinentry-mac
 brew install postgresql
+brew install procs
 brew install puma/puma/puma-dev
 brew install rbenv
 brew install ren
