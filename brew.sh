@@ -101,6 +101,7 @@ brew install zopfli
 brew tap codeclimate/formulae
 brew tap git-chglog/git-chglog
 brew install asciinema
+brew install bat
 brew install charmbracelet/homebrew-tap/glow
 brew install codeclimate
 brew install couchdb
