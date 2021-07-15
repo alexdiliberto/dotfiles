@@ -106,6 +106,7 @@ brew install charmbracelet/homebrew-tap/glow
 brew install codeclimate
 brew install couchdb
 brew install cowsay
+brew install duf
 brew install elixir
 brew install git-chglog
 brew install go
