@@ -124,6 +124,7 @@ brew install rust
 brew install sl
 brew install the_silver_searcher
 brew install thefuck
+brew install tldr
 brew install watchman
 brew install webp
 brew install yuicompressor
