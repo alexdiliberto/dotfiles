@@ -113,6 +113,7 @@ brew install glances
 brew install go
 brew install gpg-agent
 brew install heroku
+brew install hyperfine
 brew install jq
 brew install mongodb
 brew install pinentry-mac
