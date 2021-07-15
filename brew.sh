@@ -109,6 +109,7 @@ brew install cowsay
 brew install duf
 brew install elixir
 brew install git-chglog
+brew install glances
 brew install go
 brew install gpg-agent
 brew install heroku
