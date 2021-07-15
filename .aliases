@@ -59,6 +59,7 @@ alias redo='sudo \!-1'
 alias rmlog="sudo rm /var/log/asl/*" #clear out old log files
 alias vtop='vtop --theme wizard'
 alias rm=trash # https://github.com/sindresorhus/trash-cli#tip
+alias cat=bat # https://github.com/ibraheemdev/modern-unix
 alias disableNotificationCenter="launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist && killall NotificationCenter"
 alias enableNotificationCenter="launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist && open /System/Library/CoreServices/NotificationCenter.app/"
 
