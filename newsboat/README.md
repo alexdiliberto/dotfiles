@@ -1,0 +1,4 @@
+.newsboat
+=========
+
+`newsboat` configuration
