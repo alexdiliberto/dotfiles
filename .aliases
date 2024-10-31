@@ -21,8 +21,8 @@ alias bg='echo Running: bundle exec guard... ; bundle exec guard ;'
 
 # Git
 alias g='git'
-alias gd='git diff | vs - &'
-alias gdc='git diff --cached | vs - &'
+alias gd='git diff > /tmp/git-diff-output.diff && code /tmp/git-diff-output.diff'
+alias gdc='git diff --cached > /tmp/git-diff-output.diff && code /tmp/git-diff-output.diff'
 alias gdt='git difftool'
 alias gdtc='git difftool --cached'
 alias gp?='git log --pretty=oneline origin/master..HEAD'
