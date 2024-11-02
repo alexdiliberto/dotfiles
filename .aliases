@@ -36,7 +36,7 @@ alias gu='gem update --system; gem update;'
 alias gemlist='gem list | egrep -v "^( |$)"'
 alias gemcleanup='gem cleanup;'
 
-# Yarn/NPM Aliases
+# Yarn/NPM/PNPM Aliasesclear
 alias y='yarn'
 alias dedupe='npx yarn-deduplicate'
 alias nu='npm install -g npm@latest; npm update -g;'
@@ -47,6 +47,7 @@ alias nom='npm cache clean && rm -rf node_modules && mkdir node_modules && touch
 alias bom='bower cache clean && rm -rf bower_components && mkdir bower_components && touch bower_components/.metadata_never_index && bower install'
 alias nombom='npm cache clean && bower cache clean && rm -rf node_modules bower_components & mkdir node_modules && touch node_modules/.metadata_never_index && mkdir bower_components && touch bower_components/.metadata_never_index && npm install && bower install'
 alias nodmodsize='find . -name "node_modules" -type d -prune -exec du -sh '{}' + | gsort -hr'
+alias pn=pnpm
 
 # Ember
 alias e='ember'
