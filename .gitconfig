@@ -312,7 +312,7 @@
 
 [diff]
 
-  tool = Kaleidoscope
+  tool = vscode
   # Detect copies as well as renames
   renames = copies
 
