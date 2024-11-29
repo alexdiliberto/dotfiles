@@ -2,7 +2,14 @@
 
   name = Alex DiLiberto
   email = alex@alexdiliberto.com
-  signingkey = # secret-key-id (gpg --list-secret-keys --keyid-format SHORT) (/usr/bin/ssh-add -A) (/usr/bin/ssh-add -K <key>)
+  # signingkey = # **OLD METHOD** secret-key-id (gpg --list-secret-keys --keyid-format SHORT) (/usr/bin/ssh-add -A) (/usr/bin/ssh-add -K <key>)
+  signingkey = # Add my 1Password "Github SSH Key" public key value here
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/opt/1Password/op-ssh-sign"
 
 [alias]
 
