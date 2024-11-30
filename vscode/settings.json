@@ -1,4 +1,6 @@
+
 {
+  "editor.bracketPairColorization.enabled": true,
   "editor.fontFamily": "FiraCode-Retina, Fira Code, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
