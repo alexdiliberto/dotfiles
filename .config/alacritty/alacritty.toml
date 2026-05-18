@@ -1,0 +1,16 @@
+[selection]
+save_to_clipboard = true
+
+[scrolling]
+history = 100000
+
+[window]
+padding = { x = 6, y = 6 }
+dynamic_padding = true
+opacity = 0.9
+
+[font]
+size = 12
+
+[mouse]
+hide_when_typing = true
